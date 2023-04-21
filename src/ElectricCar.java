@@ -32,7 +32,7 @@ public class ElectricCar extends ACar {
     @Override
     public int getRegistrationFee() {
         int registrationFee;
-        if (getWhPrKm() >= 20 && getWhPrKm() <= 50) {
+        if (getWhPrKm() >= 20) {
             registrationFee = 330;
         } else if (getWhPrKm() >= 15 && getWhPrKm() < 20) {
             registrationFee = 1050;
@@ -43,7 +43,7 @@ public class ElectricCar extends ACar {
         } else if (getWhPrKm() < 5) {
             registrationFee = 10470;
         } else {
-            registrationFee = 370;
+            registrationFee = 0;
         }
         return registrationFee;
     }
